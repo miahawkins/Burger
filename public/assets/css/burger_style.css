@@ -1,6 +1,8 @@
 html {
 	text-align: center;
 	background-color: grey;
+	color: white;
+	
 }
 
 .left {
@@ -18,4 +20,19 @@ html {
 #burgerpic {
 	width: 400px;
 	height: 200px;
+}
+
+button {
+	background-color: #7fa1d8;
+	color: white;
+	border-radius: 12px;
+
+}
+
+#availableBurgers {
+	float: left;
+}
+
+span {
+	float: right;
 }

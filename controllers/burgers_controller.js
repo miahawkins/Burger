@@ -12,7 +12,7 @@ router.get("/", function(request, response) {
 	});
 });
 
-router.post("/burgers/create", function(request, response) {
+router.post("/burgers", function(request, response) {
 	burger.insertOne([
 		"burger_name"
 	], [
@@ -22,7 +22,7 @@ router.post("/burgers/create", function(request, response) {
 	});
 });
 
-router.put("/burgers/:id", function(request, response) {
+router.post("/burgers/:id", function(request, response) {
 	var condition = "id = " + request.params.id;
 
 	burger.updateOne({

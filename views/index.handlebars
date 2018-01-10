@@ -2,22 +2,28 @@
 
 <section>
 	<div class="left">
+		<h5>Burgers to be devoured:</h5>
 		{{#each burgers}}
-			{{#unless burgers.devoured}}
+			{{#unless devoured}}
 				<div>
-					<form action="/burgers/{{burgers.id}}" method="POST">
-						<button type="submit" class="availableBurgers"> {{burgers.burger_name}}</button>
+					
+					<span>{{burger_name}}</span>
+					
+					<form action="/burgers/{{id}}" method="POST">
+						<button type="submit" class="availableBurgers">Devour</button>
 					</form>
 				</div>
 			{{/unless}}
 		{{/each}}
 	</div>
 
+
 	<div class="right">
+		<h5>Burgers that have been devoured:</h5>
 		{{#each burgers}}
-			{{#if burgers.devoured}}
+			{{#if devoured}}
 				<div class="eatenBurgers">
-					{{burgers.burger_name}}
+					{{burger_name}}
 				</div>
 			{{/if}}
 		{{/each}}
