@@ -7,10 +7,13 @@ html {
 
 .left {
 	float: left;
+	background-color: aqua;
 }
 
 .right {
-	float: left:;
+	/*float: left;*/
+	background-color: turquoise;
+	margin-left: 50%;
 }
 
 .bottom {
