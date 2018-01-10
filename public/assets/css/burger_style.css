@@ -2,3 +2,20 @@ html {
 	text-align: center;
 	background-color: grey;
 }
+
+.left {
+	float: left;
+}
+
+.right {
+	float: left:;
+}
+
+.bottom {
+	float: clear;
+}
+
+#burgerpic {
+	width: 400px;
+	height: 200px;
+}

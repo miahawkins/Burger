@@ -12,7 +12,7 @@ router.get("/", function(request, response) {
 	});
 });
 
-router.post("/burgers", function(request, response) {
+router.post("/burgers/create", function(request, response) {
 	burger.insertOne([
 		"burger_name"
 	], [
